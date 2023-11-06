@@ -1,0 +1,55 @@
+@import "./components/Drop-Down";
+@import "./components/Contacts-Down";
+@import "./components/language_bar";
+.Header {
+    margin: 0;
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #124c00, #061900);
+}
+
+.nav-bar {
+    width: 50%;
+}
+
+.Header-nav-list {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        transition: 0.6s;
+
+        a {
+            font-family: var(--font-family-header);
+            font-size: 1.7vw;
+            font-weight: 600;
+            color: var(--color-white);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            opacity: 1;
+
+            svg {
+                margin-right: 0.5vw;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.about-me {
+    position: relative;
+
+    a {
+        svg {
+            &:last-child {
+                margin-right: 0;
+                margin-top: 0.6vw;
+            }
+        }
+    }
+}

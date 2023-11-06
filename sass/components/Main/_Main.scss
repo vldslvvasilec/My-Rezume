@@ -1,0 +1,37 @@
+@import "./components/Main-Home";
+@import "./components/Main-Skills";
+@import "./components/Main-Portfolio";
+
+.Main {
+    width: 100%;
+    background-image: linear-gradient(170deg,
+            var(--color-green-dark2x),
+            var(--color-green-dark1x),
+            var(--color-green-light1x) 60%,
+            var(--color-green-dark1x),
+            var(--color-green-dark2x));
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.7vw;
+    flex-direction: column;
+
+    // div {
+    //     width: 85%;
+    //     height: 73.5vh;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     align-content: center;
+    //     border-radius: 15px;
+    //     background-color: var(--color-green);
+    //     box-shadow: 0px 0px 30px var(--color-green-light1x);
+    //     padding: 2vw;
+    //     margin-top: 15vh;
+    //     flex-direction: column;
+    //     font-family: var(--font-family-header);
+    //     color: var(--color-white);
+    //     box-sizing: border-box;
+    // }
+}
