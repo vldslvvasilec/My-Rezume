@@ -210,7 +210,8 @@ a {
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
-.Header-nav-list li a {
+.Header-nav-list li a,
+.Header-nav-list li section {
   font-family: var(--font-family-header);
   font-size: 1.7vw;
   font-weight: 600;
@@ -223,8 +224,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
+  cursor: pointer;
 }
-.Header-nav-list li a svg {
+.Header-nav-list li a svg,
+.Header-nav-list li section svg {
   margin-right: 0.5vw;
 }
 .Header-nav-list li:hover {

@@ -26,7 +26,7 @@ const langArr = {
         ua: "Про мене",
         cz: "O mně",
     },
-    lsg_header_work: { ru: "Работо", en: "Work", ua: "Робота", cz: "Práce" },
+    lsg_header_work: { ru: "Работа", en: "Work", ua: "Робота", cz: "Práce" },
     lsg_header_education: {
         ru: "Образование",
         en: "Education",

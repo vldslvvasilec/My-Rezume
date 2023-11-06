@@ -1,6 +1,7 @@
 @import "./components/Drop-Down";
 @import "./components/Contacts-Down";
 @import "./components/language_bar";
+
 .Header {
     margin: 0;
     padding: 2vh 0;
@@ -20,7 +21,8 @@
     li {
         transition: 0.6s;
 
-        a {
+        a,
+        section {
             font-family: var(--font-family-header);
             font-size: 1.7vw;
             font-weight: 600;
@@ -29,6 +31,7 @@
             display: flex;
             align-items: center;
             opacity: 1;
+            cursor: pointer;
 
             svg {
                 margin-right: 0.5vw;

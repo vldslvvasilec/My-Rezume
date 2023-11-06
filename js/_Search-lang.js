@@ -37,7 +37,6 @@ function changeLanguageHash() {
     }
     document.querySelector("title").innerHTML = Title["title"][hash];
     for (let key in langArr) {
-        console.log(`.${key}`);
         document.querySelector(`.${key}`).innerHTML = langArr[key][hash];
     }
 }
