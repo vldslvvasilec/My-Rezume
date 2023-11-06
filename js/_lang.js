@@ -1,3 +1,4 @@
+console.log("lang.js")
 const Title = {
     title: {
         ru: "Резюме Владислав Шапошник",
