@@ -1,4 +1,3 @@
-console.log("Header-js");
 const dropdawnBtn = document.getElementById("btn");
 const dropdawnMenu = document.getElementById("dropdown");
 const toggleArrow = document.getElementById("arrow");
