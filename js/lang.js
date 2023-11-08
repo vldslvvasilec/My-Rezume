@@ -1,11 +1,11 @@
-// const Title = {
-//     title: {
-//         ru: "Резюме Владислав Шапошник",
-//         en: "Rezume Vladyslav Shaposhnyk",
-//         ua: "Резюме Владислав Шапошник",
-//         cz: "Životopis Vladislav Šapošník",
-//     },
-// };
+const Title = {
+    title: {
+        ru: "Резюме Владислав Шапошник",
+        en: "Rezume Vladyslav Shaposhnyk",
+        ua: "Резюме Владислав Шапошник",
+        cz: "Životopis Vladislav Šapošník",
+    },
+};
 const langArr = {
     title: {
         ru: "Резюме Владислав Шапошник",
