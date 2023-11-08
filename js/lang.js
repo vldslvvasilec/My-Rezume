@@ -7,12 +7,6 @@ const Title = {
     },
 };
 const langArr = {
-    title: {
-        ru: "Резюме Владислав Шапошник",
-        en: "Rezume Vladyslav Shaposhnyk",
-        ua: "Резюме Владислав Шапошник",
-        cz: "Životopis Vladislav Šapošník",
-    },
     lsg_header_home: { ru: "Главная", en: "Home", ua: "Головна", cz: "Domov" },
     lsg_header_skills: {
         ru: "Навыки",
