@@ -9,6 +9,20 @@
     height: 5vh;
 }
 
+@keyframes langButtonTransform {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
 .language-img {
     width: 3vw;
     display: block;
@@ -26,6 +40,7 @@
     border-radius: 1vw;
     color: var(--color-white);
     cursor: pointer;
+    animation: langButtonTransform 3s ease-in-out infinite;
 }
 
 .language-menu {
@@ -60,7 +75,7 @@
     font-size: 1.2vw;
 }
 
-.drop-down-btn:hover+.language-menu,
+.drop-down-btn:hover + .language-menu,
 .language-menu:hover {
     opacity: 1;
     visibility: visible;
@@ -68,4 +83,32 @@
 
 .language-items {
     background-color: 5fcbff;
+}
+
+@media screen and (max-width: 800px) {
+    .language-img {
+        width: 4vw;
+    }
+
+    .language-title {
+        width: 3vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .langBar {
+        left: 0;
+        right: auto;
+        margin: 10vw 0 0 2vw;
+    }
+
+    .language-img {
+        width: 6vw;
+    }
+
+    .language-title {
+        width: 4.3vw;
+        font-size: 2vw;
+    }
 }

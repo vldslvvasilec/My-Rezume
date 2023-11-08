@@ -1,6 +1,5 @@
 .Main-Skills {
     width: 85%;
-    height: 73.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,10 +14,7 @@
     color: var(--color-white);
     box-sizing: border-box;
     transition: 1s;
-
-    &:hover {
-        transform: scale(1.02);
-    }
+    animation: shadow-pulse 3s infinite;
 }
 
 .programers {
@@ -46,6 +42,7 @@
 .skill-wrap {
     display: flex;
     margin-bottom: 3.5vh;
+    align-items: center;
 
     &:last-child {
         margin-bottom: 0;
@@ -59,22 +56,21 @@
 
 .containers-skills {
     width: 60%;
-    height: 5vh;
+    height: 3.5vw;
     background-color: #ddd;
     border-radius: 1vw;
     box-shadow: 0px 0px 8px var(--color-green-light1x);
 }
 
 .skills-value {
-    height: 5vh;
+    height: 3.5vw;
     padding-right: 1vw;
-    line-height: 2vh;
+    line-height: 2vw;
     color: var(--color-white);
     border-radius: 1vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 .html,
@@ -93,4 +89,28 @@
 .telebot {
     width: 70%;
     background-color: var(--color-green-light3x);
+}
+
+@media screen and (max-width: 800px) {
+
+    .front-end,
+    .back-end {
+        width: 55%;
+        padding-left: 1vw;
+
+        h2 {
+            font-size: 3.5vw;
+        }
+    }
+
+    .skill-wrap {
+        h3 {
+            width: 15vw;
+            font-size: 1.8vw;
+        }
+    }
+
+    .containers-skills {
+        width: 55%;
+    }
 }

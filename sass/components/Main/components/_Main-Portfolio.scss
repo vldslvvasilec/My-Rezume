@@ -15,6 +15,7 @@
     color: var(--color-white);
     box-sizing: border-box;
     transition: 1s;
+    animation: shadow-pulse 3s infinite;
 
     &:hover {
         transform: scale(1.02);
