@@ -1,4 +1,3 @@
-console.log("lang");
 const Title = {
     title: {
         ru: "Резюме Владислав Шапошник",

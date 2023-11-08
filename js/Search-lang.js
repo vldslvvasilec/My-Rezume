@@ -1,4 +1,3 @@
-console.log("Search-lang");
 const allLang = ["en", "ru", "cz", "ua"];
 let langItems = document.getElementsByClassName("language-item");
 let btnImg = document.getElementById("btn-img");
