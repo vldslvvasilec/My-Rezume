@@ -1,7 +1,8 @@
+console.log("Search-lang");
 const allLang = ["en", "ru", "cz", "ua"];
-var langItems = document.getElementsByClassName("language-item");
-var btnImg = document.getElementById("btn-img");
-var btnTitle = document.getElementById("btn-title");
+let langItems = document.getElementsByClassName("language-item");
+let btnImg = document.getElementById("btn-img");
+let btnTitle = document.getElementById("btn-title");
 
 const LocationIndex = window.location.href.split("#")[1];
 let languageIndex;
@@ -15,8 +16,8 @@ if (languageIndex) {
     btnTitle.innerHTML = languageIndex;
 } else btnImg.src = `assets/icons/language/EN.png`;
 
-for (var i = 0; i < langItems.length; i++) {
-    var langItem = langItems[i];
+for (let i = 0; i < langItems.length; i++) {
+    let langItem = langItems[i];
     langItem.onclick = changeLanguage;
 }
 
