@@ -34,7 +34,7 @@ function changeLanguageHash() {
         location.href = window.location.pathname + "#en";
         location.reload();
     }
-    // document.querySelector("title").innerHTML = Title["title"][hash];
+    document.querySelector("title").innerHTML = Title["title"][hash];
     for (let key in langArr) {
         document.querySelector(`.${key}`).innerHTML = langArr[key][hash];
     }
