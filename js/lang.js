@@ -1,3 +1,4 @@
+console.log("lang");
 const Title = {
     title: {
         ru: "Резюме Владислав Шапошник",
@@ -53,9 +54,9 @@ const langArr = {
     },
     lsg_main_my_name: {
         ru: "Я Владислав Шапошник",
-        en: "I'm Vladislav Shaposhnik",
+        en: "I'm Vladyslav Shaposhnyk",
         ua: "Мене звати Владислав Шапошник",
-        cz: "Jmenuji se Vladyslav Šapošnyk",
+        cz: "Jmenuji se Vladislav Šapošnik",
     },
     lsg_main_search_work1: {
         ru: "Ищу работу в сфере IT технологий.",

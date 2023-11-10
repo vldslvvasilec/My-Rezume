@@ -1,7 +1,8 @@
+console.log("search-lang");
 const allLang = ["en", "ru", "cz", "ua"];
-let langItems = document.getElementsByClassName("language-item");
-let btnImg = document.getElementById("btn-img");
-let btnTitle = document.getElementById("btn-title");
+var langItems = document.getElementsByClassName("language-item");
+var btnImg = document.getElementById("btn-img");
+var btnTitle = document.getElementById("btn-title");
 
 const LocationIndex = window.location.href.split("#")[1];
 let languageIndex;
@@ -15,8 +16,8 @@ if (languageIndex) {
     btnTitle.innerHTML = languageIndex;
 } else btnImg.src = `assets/icons/language/EN.png`;
 
-for (let i = 0; i < langItems.length; i++) {
-    let langItem = langItems[i];
+for (var i = 0; i < langItems.length; i++) {
+    var langItem = langItems[i];
     langItem.onclick = changeLanguage;
 }
 
@@ -37,6 +38,7 @@ function changeLanguageHash() {
     document.querySelector("title").innerHTML = Title["title"][hash];
     for (let key in langArr) {
         document.querySelector(`.${key}`).innerHTML = langArr[key][hash];
+        console.log(`.${key}`);
     }
 }
 document.addEventListener("DOMContentLoaded", changeLanguageHash());
