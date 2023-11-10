@@ -545,6 +545,36 @@ a {
     font-size: 3vw;
   }
 }
+@media (max-width: 320px) {
+  .home-my-foto img {
+    width: 50vw;
+  }
+  .home-my-conten {
+    width: 90%;
+    font-size: 2.8vw;
+  }
+  .home-my-conten h3 {
+    margin-bottom: 1.5vw;
+    font-size: 4vw;
+  }
+  .home-my-conten p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .home-my-conten p:first-child {
+    margin-bottom: 1.5vw;
+    font-size: 3.3vw;
+  }
+}
 .Main-Skills {
   display: none;
   width: 85%;
