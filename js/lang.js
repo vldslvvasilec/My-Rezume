@@ -54,9 +54,9 @@ const langArr = {
     },
     lsg_main_my_name: {
         ru: "Я Владислав Шапошник",
-        en: "I'm Vladislav Shapošnik",
+        en: "I'm Vladyslav Shaposhnyk ",
         ua: "Мене звати Владислав Шапошник",
-        cz: "Jmenuji se Vladyslav Shaposhnyk",
+        cz: "Jmenuji se Vladislav Šhapošnik",
     },
     lsg_main_search_work1: {
         ru: "Ищу работу в сфере IT технологий.",
