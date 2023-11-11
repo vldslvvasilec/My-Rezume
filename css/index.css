@@ -514,7 +514,7 @@ a {
     margin: 0 0 2vw 0;
   }
   .home-my-foto img {
-    width: 40vw;
+    width: 50vw;
   }
   .home-my-conten {
     width: 90%;
@@ -576,8 +576,8 @@ a {
   }
 }
 .Main-Skills {
-  display: none;
   width: 85%;
+  height: 73.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,14 +641,14 @@ a {
       align-self: center;
   font-size: 3vw;
   font-weight: 600;
-  margin-bottom: 5vh;
+  margin-bottom: 3vw;
 }
 
 .skill-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3.5vh;
+  margin-bottom: 2vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -657,13 +657,13 @@ a {
   margin-bottom: 0;
 }
 .skill-wrap h3 {
-  width: 12vw;
-  font-size: 1.6vw;
+  width: 10vw;
+  font-size: 2vw;
 }
 
 .containers-skills {
   width: 60%;
-  height: 3.5vw;
+  height: 2.5vw;
   background-color: #ddd;
   border-radius: 1vw;
   -webkit-box-shadow: 0px 0px 8px var(--color-green-light1x);
@@ -671,7 +671,7 @@ a {
 }
 
 .skills-value {
-  height: 3.5vw;
+  height: 2.5vw;
   padding-right: 1vw;
   line-height: 2vw;
   color: var(--color-white);
@@ -685,6 +685,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-size: 2vw;
 }
 
 .html,
@@ -716,11 +717,31 @@ a {
     font-size: 3.5vw;
   }
   .skill-wrap h3 {
-    width: 15vw;
-    font-size: 1.8vw;
+    width: 12vw;
+    font-size: 2.2vw;
   }
   .containers-skills {
     width: 55%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .programers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skill-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .Main-potfolio {
@@ -757,11 +778,230 @@ a {
   -webkit-animation: shadow-pulse 3s infinite;
           animation: shadow-pulse 3s infinite;
 }
-.Main-potfolio:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+
+.Main-works {
+  width: 85%;
+  height: 73.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 15px;
+  background-color: var(--color-green);
+  -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+          box-shadow: 0px 0px 30px var(--color-green-light1x);
+  padding: 2vw;
+  margin-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-family-header);
+  color: var(--color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  font-family: var(--font-family-Home-italic);
+  font-style: italic;
+  line-height: 1.3;
 }
 
+.Main-educations {
+  width: 85%;
+  height: 73.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 15px;
+  background-color: var(--color-green);
+  -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+          box-shadow: 0px 0px 30px var(--color-green-light1x);
+  padding: 2vw;
+  margin-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-family-header);
+  color: var(--color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  font-family: var(--font-family-Home-italic);
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.Main-languages {
+  width: 85%;
+  height: 73.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 15px;
+  background-color: var(--color-green);
+  -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+          box-shadow: 0px 0px 30px var(--color-green-light1x);
+  padding: 2vw;
+  margin-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-family-header);
+  color: var(--color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  font-family: var(--font-family-Home-italic);
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.Main-hobbies {
+  width: 85%;
+  height: 73.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 15px;
+  background-color: var(--color-green);
+  -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+          box-shadow: 0px 0px 30px var(--color-green-light1x);
+  padding: 2vw;
+  margin-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-family-header);
+  color: var(--color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  font-family: var(--font-family-Home-italic);
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.Main-character {
+  width: 85%;
+  height: 73.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 15px;
+  background-color: var(--color-green);
+  -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+          box-shadow: 0px 0px 30px var(--color-green-light1x);
+  padding: 2vw;
+  margin-top: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-family-header);
+  color: var(--color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  font-family: var(--font-family-Home-italic);
+  font-style: italic;
+  line-height: 1.3;
+}
+.Main-character h3 {
+  width: 80%;
+  text-align: center;
+  font-size: 2.6vw;
+  margin-bottom: 1vw;
+}
+.Main-character p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.8vw;
+}
+
+@media (max-width: 800px) {
+  .Main-character h3 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  .Main-character p {
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 500px) {
+  .Main-character h3 {
+    font-size: 4.5vw;
+    margin-bottom: 1vw;
+  }
+  .Main-character p {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 320px) {
+  .Main-character h3 {
+    font-size: 5vw;
+    margin-bottom: 1.2vw;
+  }
+  .Main-character p {
+    font-size: 4vw;
+  }
+}
 .Main {
   width: 100%;
   background: linear-gradient(170deg, var(--color-green-dark2x), var(--color-green-dark1x), var(--color-green-light1x) 60%, var(--color-green-dark1x), var(--color-green-dark2x));

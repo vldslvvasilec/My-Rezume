@@ -1,4 +1,3 @@
-console.log("search-lang");
 const allLang = ["en", "ru", "cz", "ua"];
 var langItems = document.getElementsByClassName("language-item");
 var btnImg = document.getElementById("btn-img");
@@ -38,7 +37,6 @@ function changeLanguageHash() {
     document.querySelector("title").innerHTML = Title["title"][hash];
     for (let key in langArr) {
         document.querySelector(`.${key}`).innerHTML = langArr[key][hash];
-        console.log(`.${key}`);
     }
 }
 document.addEventListener("DOMContentLoaded", changeLanguageHash());

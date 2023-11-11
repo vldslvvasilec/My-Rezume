@@ -1,4 +1,3 @@
-console.log("lang");
 const Title = {
     title: {
         ru: "Резюме Владислав Шапошник",
@@ -46,6 +45,12 @@ const langArr = {
         ua: "Хобі",
         cz: "Záliby",
     },
+    lsg_header_Characteristic: {
+        ru: "Характеристика",
+        en: "Profile",
+        ua: "Характеристика",
+        cz: "Charakteristika",
+    },
     lsg_main_velcome: {
         ru: "Добро пожаловать на мою страницу.",
         en: "Welcome to my page.",
@@ -75,5 +80,18 @@ const langArr = {
         en: "If you have any offers for me, please get in touch.",
         ua: "Якщо у вас є пропозиції для мене, будь ласка, зв'яжіться зі мною.",
         cz: "Pokud máte pro mě nabídky, prosím, kontaktujte mě.",
+    },
+    lsg_main_character_title: {
+        ru: "Самооценка",
+        en: "Self-Assessment",
+        ua: "Самооцінка",
+        cz: "Sebehodnocení",
+    },
+    lsg_main_character_text: {
+        ru: "Опытный специалист с фокусом на достижении результатов. Мои сильные стороны включают в себя стратегическое мышление, аналитические навыки и умение эффективно работать в команде. Настойчивость – это ключевая часть моего подхода к работе: я готов преодолевать трудности и находить решения, несмотря на сложности. Я постоянно стремлюсь к профессиональному развитию и открыт для новых вызовов. Стремлюсь к достижению высоких стандартов качества в своей работе, а также готов к обучению и внесению положительного вклада в успех команды.",
+
+        en: "Experienced professional with a focus on achieving results. My strengths include strategic thinking, analytical skills, and the ability to work effectively in a team. Persistence is a key part of my approach to work: I am ready to overcome challenges and find solutions despite difficulties. I am constantly striving for professional development and open to new challenges. I aim to achieve high standards of quality in my work and am ready to learn and contribute to the team's success.",
+        ua: "Досвідчений фахівець з фокусом на досягненні результатів. Мої сильні сторони включають стратегічне мислення, аналітичні навички та здатність ефективно працювати в команді. Наполегливість - ключова частина мого підходу до роботи: я готовий подолати труднощі та знаходити рішення незважаючи на складнощі. Я постійно прагну до професійного розвитку та відкритий для нових викликів. Мета - досягти високих стандартів якості в своїй роботі та готовий вчитися та вносити позитивний внесок у успіх команди.",
+        cz: "Zkušený odborník s důrazem na dosahování výsledků. Mezi mé silné stránky patří strategické myšlení, analytické dovednosti a schopnost efektivně pracovat v týmu. Vytrvalost je klíčovou součástí mého přístupu k práci: jsem připraven překonávat obtíže a hledat řešení navzdory složitostem. Neustále se snažím o profesionální rozvoj a jsem otevřen novým výzvám. Usiluji o dosažení vysokých standardů kvality ve své práci a jsem připraven se učit a přispívat k úspěchu týmu.",
     },
 };

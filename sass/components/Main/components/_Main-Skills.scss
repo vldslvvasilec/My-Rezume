@@ -1,6 +1,6 @@
 .Main-Skills {
-    display: none;
     width: 85%;
+    height: 73.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,13 +36,13 @@
         align-self: center;
         font-size: 3vw;
         font-weight: 600;
-        margin-bottom: 5vh;
+        margin-bottom: 3vw;
     }
 }
 
 .skill-wrap {
     display: flex;
-    margin-bottom: 3.5vh;
+    margin-bottom: 2vw;
     align-items: center;
 
     &:last-child {
@@ -50,21 +50,21 @@
     }
 
     h3 {
-        width: 12vw;
-        font-size: 1.6vw;
+        width: 10vw;
+        font-size: 2vw;
     }
 }
 
 .containers-skills {
     width: 60%;
-    height: 3.5vw;
+    height: 2.5vw;
     background-color: #ddd;
     border-radius: 1vw;
     box-shadow: 0px 0px 8px var(--color-green-light1x);
 }
 
 .skills-value {
-    height: 3.5vw;
+    height: 2.5vw;
     padding-right: 1vw;
     line-height: 2vw;
     color: var(--color-white);
@@ -72,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-size: 2vw;
 }
 
 .html,
@@ -93,6 +94,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
     .front-end,
     .back-end {
         width: 55%;
@@ -105,12 +107,24 @@
 
     .skill-wrap {
         h3 {
-            width: 15vw;
-            font-size: 1.8vw;
+            width: 12vw;
+            font-size: 2.2vw;
         }
     }
 
     .containers-skills {
         width: 55%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .programers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill-wrap {
+        display: flex;
+        flex-direction: column;
     }
 }

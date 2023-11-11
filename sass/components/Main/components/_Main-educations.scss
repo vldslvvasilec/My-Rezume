@@ -1,5 +1,4 @@
-.Main-potfolio {
-    display: none;
+.Main-educations {
     width: 85%;
     height: 73.5vh;
     display: flex;
@@ -17,4 +16,7 @@
     box-sizing: border-box;
     transition: 1s;
     animation: shadow-pulse 3s infinite;
+    font-family: var(--font-family-Home-italic);
+    font-style: italic;
+    line-height: 1.3;
 }
