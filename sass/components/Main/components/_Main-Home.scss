@@ -114,14 +114,14 @@
         margin: 0 0 2vw 0;
 
         img {
-            width: 50vw;
+            width: 35vw;
         }
     }
 
     .home-my-conten {
         width: 90%;
         justify-content: flex-start;
-        font-size: 2.7vw;
+        font-size: 2.5vw;
 
         h3 {
             margin-bottom: 1vw;
@@ -142,7 +142,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     .home-my-foto {
         img {
             width: 50vw;

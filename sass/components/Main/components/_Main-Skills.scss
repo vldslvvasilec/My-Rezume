@@ -42,7 +42,7 @@
 
 .skill-wrap {
     display: flex;
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     align-items: center;
 
     &:last-child {
@@ -101,14 +101,14 @@
         padding-left: 1vw;
 
         h2 {
-            font-size: 3.5vw;
+            font-size: 5vw;
         }
     }
 
     .skill-wrap {
         h3 {
-            width: 12vw;
-            font-size: 2.2vw;
+            width: 14vw;
+            font-size: 2.8vw;
         }
     }
 
@@ -121,10 +121,47 @@
     .programers {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .front-end,
+    .back-end {
+        width: 90%;
+
+        h2 {
+            margin-bottom: 3vw;
+        }
+    }
+
+    .front-end {
+        margin-bottom: 5vw;
     }
 
     .skill-wrap {
-        display: flex;
-        flex-direction: column;
+        h3 {
+            width: 17vw;
+            font-size: 3.5vw;
+        }
+    }
+
+    .containers-skills {
+        width: 65%;
+        height: 3.5vw;
+    }
+
+    .skills-value {
+        height: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .containers-skills,
+    .skills-value {
+        height: 4vw;
+    }
+
+    .skill-wrap {
+        margin-bottom: 5vw;
     }
 }

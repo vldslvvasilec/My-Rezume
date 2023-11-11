@@ -20,3 +20,124 @@
     font-style: italic;
     line-height: 1.3;
 }
+
+.languages {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        align-self: center;
+        font-size: 3vw;
+        font-weight: 600;
+        margin-bottom: 3vw;
+    }
+}
+
+.languag-wrap {
+    display: flex;
+    margin-bottom: 2.5vw;
+    align-items: center;
+    justify-content: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        width: 20%;
+        font-size: 2vw;
+        text-align: right;
+        padding-right: 2vw;
+    }
+}
+
+.containers-languag {
+    width: 60%;
+    height: 2.5vw;
+    background-color: #ddd;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 8px var(--color-green-light1x);
+}
+
+.languag-value {
+    height: 2.5vw;
+    padding-right: 1vw;
+    line-height: 2vw;
+    color: var(--color-white);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2vw;
+}
+
+.ukrainian,
+.russion {
+    width: 100%;
+    background-color: var(--color-green-light3x);
+}
+
+.cheh {
+    width: 50%;
+    background-color: var(--color-green-light3x);
+}
+
+.english {
+    width: 20%;
+    background-color: var(--color-green-light3x);
+}
+
+@media screen and (max-width:800px) {
+    .languages {
+        h2 {
+            font-size: 5vw;
+        }
+    }
+
+    .languag-wrap {
+        margin-bottom: 3.5vw;
+
+        h3 {
+            width: 30%;
+            font-size: 3vw;
+            padding-right: 2.3vw;
+        }
+    }
+
+    .containers-languag,
+    .languag-value {
+        height: 4vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .languages {
+        h2 {
+            font-size: 6vw;
+        }
+    }
+
+    .languag-wrap {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            align-self: flex-start;
+            margin-bottom: 2vw;
+            text-align: left;
+            margin-left: 10vw;
+            font-size: 3.5vw;
+        }
+    }
+
+    .containers-languag {
+        align-self: flex-end;
+        margin-right: 10vw;
+    }
+
+    .containers-languag,
+    .languag-value {
+        height: 4.5vw;
+    }
+}

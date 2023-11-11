@@ -59,9 +59,9 @@ const langArr = {
     },
     lsg_main_my_name: {
         ru: "Я Владислав Шапошник",
-        en: "I'm Vladyslav Shaposhnyk ",
+        en: "I'm Vladislav Shapošnik",
         ua: "Мене звати Владислав Шапошник",
-        cz: "Jmenuji se Vladislav Šhapošnik",
+        cz: "Jmenuji se Vladyslav Shaposhnyk",
     },
     lsg_main_search_work1: {
         ru: "Ищу работу в сфере IT технологий.",
@@ -93,5 +93,30 @@ const langArr = {
         en: "Experienced professional with a focus on achieving results. My strengths include strategic thinking, analytical skills, and the ability to work effectively in a team. Persistence is a key part of my approach to work: I am ready to overcome challenges and find solutions despite difficulties. I am constantly striving for professional development and open to new challenges. I aim to achieve high standards of quality in my work and am ready to learn and contribute to the team's success.",
         ua: "Досвідчений фахівець з фокусом на досягненні результатів. Мої сильні сторони включають стратегічне мислення, аналітичні навички та здатність ефективно працювати в команді. Наполегливість - ключова частина мого підходу до роботи: я готовий подолати труднощі та знаходити рішення незважаючи на складнощі. Я постійно прагну до професійного розвитку та відкритий для нових викликів. Мета - досягти високих стандартів якості в своїй роботі та готовий вчитися та вносити позитивний внесок у успіх команди.",
         cz: "Zkušený odborník s důrazem na dosahování výsledků. Mezi mé silné stránky patří strategické myšlení, analytické dovednosti a schopnost efektivně pracovat v týmu. Vytrvalost je klíčovou součástí mého přístupu k práci: jsem připraven překonávat obtíže a hledat řešení navzdory složitostem. Neustále se snažím o profesionální rozvoj a jsem otevřen novým výzvám. Usiluji o dosažení vysokých standardů kvality ve své práci a jsem připraven se učit a přispívat k úspěchu týmu.",
+    },
+    lsg_main_languages: {
+        ru: "Языковые навыки",
+        en: "Language Skills",
+        ua: "Мовні навички",
+        cz: " Jazykové dovednosti",
+    },
+    lsg_main_english: {
+        ru: "Английский",
+        en: "English",
+        ua: "Англійська",
+        cz: "Angličtina",
+    },
+    lsg_main_cheh: { ru: "Чешский", en: "Czech", ua: "Чеська", cz: "Čeština" },
+    lsg_main_rus: {
+        ru: "Русский",
+        en: "Russian",
+        ua: "Російська",
+        cz: "Ruština",
+    },
+    lsg_main_ukranian: {
+        ru: "Украинский",
+        en: "Ukrainian",
+        ua: "Українська",
+        cz: "Ukrajinština",
     },
 };
