@@ -19,4 +19,56 @@
     font-family: var(--font-family-Home-italic);
     font-style: italic;
     line-height: 1.3;
+
+    h3 {
+        width: 80%;
+        text-align: center;
+        font-size: 2.6vw;
+        margin-bottom: 1vw;
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .Main-hobbies {
+        h3 {
+            font-size: 3vw;
+            margin-bottom: 1vw;
+        }
+
+        p {
+            font-size: 2.3vw;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Main-hobbies {
+        h3 {
+            font-size: 4.5vw;
+            margin-bottom: 1vw;
+        }
+
+        p {
+            font-size: 3.5vw;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .Main-hobbies {
+        h3 {
+            font-size: 5vw;
+            margin-bottom: 1.2vw;
+        }
+
+        p {
+            font-size: 4vw;
+        }
+    }
 }

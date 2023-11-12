@@ -659,6 +659,7 @@ a {
 .skill-wrap h3 {
   width: 10vw;
   font-size: 2vw;
+  word-wrap: break-word;
 }
 
 .containers-skills {
@@ -748,13 +749,28 @@ a {
   .front-end {
     margin-bottom: 5vw;
   }
+  .skill-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .skill-wrap h3 {
-    width: 17vw;
+    width: 50vw;
     font-size: 3.5vw;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 10vw;
   }
   .containers-skills {
     width: 65%;
     height: 3.5vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 10vw;
   }
   .skills-value {
     height: 3.5vw;
@@ -1082,7 +1098,45 @@ a {
   font-style: italic;
   line-height: 1.3;
 }
+.Main-hobbies h3 {
+  width: 80%;
+  text-align: center;
+  font-size: 2.6vw;
+  margin-bottom: 1vw;
+}
+.Main-hobbies p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.8vw;
+}
 
+@media (max-width: 800px) {
+  .Main-hobbies h3 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  .Main-hobbies p {
+    font-size: 2.3vw;
+  }
+}
+@media (max-width: 500px) {
+  .Main-hobbies h3 {
+    font-size: 4.5vw;
+    margin-bottom: 1vw;
+  }
+  .Main-hobbies p {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 320px) {
+  .Main-hobbies h3 {
+    font-size: 5vw;
+    margin-bottom: 1.2vw;
+  }
+  .Main-hobbies p {
+    font-size: 4vw;
+  }
+}
 .Main-character {
   width: 85%;
   height: 73.5vh;

@@ -119,4 +119,16 @@ const langArr = {
         ua: "Українська",
         cz: "Ukrajinština",
     },
+    lsg_main_hobies_title: {
+        ru: "Увлечения",
+        en: "Hobbies",
+        ua: " Хобі",
+        cz: "Koníčky",
+    },
+    lsg_main_hobies_text: {
+        ru: "В свободное время я с удовольствием занимаюсь постоянным обучением, всегда стремясь к расширению своих знаний и навыков. Люблю проводить время на пеших прогулках, используя их как возможность для анализа и размышлений. Меня привлекает красота природы, особенно леса и гор, что приносит мне не только удовольствие, но и вдохновение.",
+        en: "In my free time, I enjoy continuous learning, always striving to expand my knowledge and skills. I find solace in taking long walks, using them as an opportunity for analysis and contemplation. The beauty of nature, particularly forests and mountains, captivates me, providing not only enjoyment but also inspiration.",
+        ua: "У вільний час я з задоволенням займаюсь постійним навчанням, завжди прагнучи розширити свої знання та навички. Обожнюю проводити час на довгих прогулянках, використовуючи їх як можливість для аналізу і роздумів. Краса природи, зокрема лісів і гір, захоплює мене, надаючи не лише задоволення, а й натхнення.",
+        cz: "Ve svém volném čase rád pokračuji ve vzdělávání, neustále se snažíc rozšiřovat své znalosti a dovednosti. Rád trávím čas dlouhými procházkami, které využívám jako příležitost k analýze a zamyšlení. Krása přírody, zejména lesů a hor, mě pohlcuje a přináší nejen radost, ale také inspiraci.",
+    },
 };

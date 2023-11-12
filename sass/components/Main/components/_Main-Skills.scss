@@ -52,6 +52,8 @@
     h3 {
         width: 10vw;
         font-size: 2vw;
+        word-wrap: break-word;
+
     }
 }
 
@@ -74,6 +76,7 @@
     justify-content: flex-end;
     font-size: 2vw;
 }
+
 
 .html,
 .css,
@@ -138,15 +141,23 @@
     }
 
     .skill-wrap {
+        display: flex;
+        flex-direction: column;
+
         h3 {
-            width: 17vw;
+            width: 50vw;
             font-size: 3.5vw;
+            align-self: flex-start;
+            margin-left: 10vw;
         }
     }
 
     .containers-skills {
         width: 65%;
         height: 3.5vw;
+        align-self: flex-end;
+        margin-right: 10vw;
+
     }
 
     .skills-value {
