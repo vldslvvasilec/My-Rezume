@@ -419,7 +419,7 @@ a {
   margin-right: 2.8vw;
 }
 .home-my-foto img {
-  width: 20vw;
+  width: 17rem;
   border-radius: 10%;
   -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
           box-shadow: 0px 0px 20px var(--color-green-light1x);
@@ -443,13 +443,13 @@ a {
   font-style: italic;
   color: var(--color-white);
   font-weight: 500;
-  font-size: 1.7vw;
+  font-size: 1.3em;
   letter-spacing: 2px;
 }
 .home-my-conten h3 {
-  margin-bottom: 1vw;
+  margin-bottom: 1vh;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 1.3em;
 }
 .home-my-conten p {
   display: -webkit-box;
@@ -465,8 +465,8 @@ a {
   text-align: center;
 }
 .home-my-conten p:first-child {
-  margin-bottom: 1vw;
-  font-size: 2.5vw;
+  margin-bottom: 1vh;
+  font-size: 1.2em;
 }
 
 @media (max-width: 800px) {
@@ -479,23 +479,38 @@ a {
             justify-content: center;
   }
   .home-my-foto img {
-    width: 32vw;
+    width: 13rem;
   }
   .home-my-conten {
     width: 50%;
-    font-size: 2.5vw;
+    font-size: 1.1rem;
     letter-spacing: 2px;
   }
   .home-my-conten h3 {
-    margin-bottom: 1.3vw;
-    font-size: 3vw;
+    margin-bottom: 1vh;
   }
   .home-my-conten p:first-child {
-    margin-bottom: 1.3vw;
-    font-size: 2.8vw;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
+  .home-my-foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-my-foto img {
+    width: 10rem;
+  }
+  .home-my-conten {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
   .Main-Home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -508,24 +523,23 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    padding: 3vw 2vw;
   }
   .home-my-foto {
     margin: 0 0 2vw 0;
   }
   .home-my-foto img {
-    width: 35vw;
+    width: 9rem;
   }
   .home-my-conten {
     width: 90%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-size: 2.5vw;
+    font-size: 0.8em;
   }
   .home-my-conten h3 {
     margin-bottom: 1vw;
-    font-size: 3.5vw;
+    font-size: 1em;
   }
   .home-my-conten p {
     display: -webkit-box;
@@ -542,37 +556,7 @@ a {
   }
   .home-my-conten p:first-child {
     margin-bottom: 1vw;
-    font-size: 3vw;
-  }
-}
-@media (max-width: 350px) {
-  .home-my-foto img {
-    width: 50vw;
-  }
-  .home-my-conten {
-    width: 90%;
-    font-size: 2.8vw;
-  }
-  .home-my-conten h3 {
-    margin-bottom: 1.5vw;
-    font-size: 4vw;
-  }
-  .home-my-conten p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .home-my-conten p:first-child {
-    margin-bottom: 1.5vw;
-    font-size: 3.3vw;
+    font-size: 1em;
   }
 }
 .Main-Skills {
@@ -639,16 +623,16 @@ a {
 .back-end h2 {
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: 3vw;
+  font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 3vw;
+  margin-bottom: 2vh;
 }
 
 .skill-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2.5vw;
+  margin-bottom: 4vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -657,14 +641,16 @@ a {
   margin-bottom: 0;
 }
 .skill-wrap h3 {
-  width: 10vw;
-  font-size: 2vw;
+  width: 14vw;
+  margin-right: 2vw;
+  font-size: 1.3rem;
+  text-align: end;
   word-wrap: break-word;
 }
 
 .containers-skills {
   width: 60%;
-  height: 2.5vw;
+  height: 1.6rem;
   background-color: #ddd;
   border-radius: 1vw;
   -webkit-box-shadow: 0px 0px 8px var(--color-green-light1x);
@@ -672,7 +658,7 @@ a {
 }
 
 .skills-value {
-  height: 2.5vw;
+  height: 1.6rem;
   padding-right: 1vw;
   line-height: 2vw;
   color: var(--color-white);
@@ -686,7 +672,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 2vw;
+  font-size: 1rem;
 }
 
 .html,
@@ -715,14 +701,28 @@ a {
   }
   .front-end h2,
   .back-end h2 {
-    font-size: 5vw;
+    font-size: 2rem;
   }
   .skill-wrap h3 {
     width: 14vw;
-    font-size: 2.8vw;
+    font-size: 1.2rem;
   }
   .containers-skills {
-    width: 55%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .skill-wrap h3 {
+    width: 15vw;
+    font-size: 1rem;
+  }
+  .containers-skills {
+    height: 1.4rem;
+    width: 43%;
+  }
+  .skills-value {
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -744,10 +744,11 @@ a {
   }
   .front-end h2,
   .back-end h2 {
-    margin-bottom: 3vw;
+    font-size: 1.1rem;
+    margin-bottom: 0.5vh;
   }
   .front-end {
-    margin-bottom: 5vw;
+    margin-bottom: 2vh;
   }
   .skill-wrap {
     display: -webkit-box;
@@ -757,32 +758,27 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 1vh;
   }
   .skill-wrap h3 {
     width: 50vw;
-    font-size: 3.5vw;
+    font-size: 0.8rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-left: 10vw;
+    text-align: start;
+    margin-bottom: 1vh;
   }
   .containers-skills {
     width: 65%;
-    height: 3.5vw;
+    height: 2vh;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-right: 10vw;
   }
   .skills-value {
-    height: 3.5vw;
-  }
-}
-@media screen and (max-width: 350px) {
-  .containers-skills,
-  .skills-value {
-    height: 4vw;
-  }
-  .skill-wrap {
-    margin-bottom: 5vw;
+    height: 2vh;
+    font-size: 0.8rem;
   }
 }
 .Main-potfolio {
@@ -944,16 +940,16 @@ a {
 .languages h2 {
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 3vw;
+  margin-bottom: 5vh;
 }
 
 .languag-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2.5vw;
+  margin-bottom: 5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -966,26 +962,27 @@ a {
 }
 .languag-wrap h3 {
   width: 20%;
-  font-size: 2vw;
+  font-size: 1.5rem;
   text-align: right;
   padding-right: 2vw;
 }
 
 .containers-languag {
   width: 60%;
-  height: 2.5vw;
+  height: 5vh;
   background-color: #ddd;
-  border-radius: 1vw;
+  border-radius: 15px;
   -webkit-box-shadow: 0px 0px 8px var(--color-green-light1x);
           box-shadow: 0px 0px 8px var(--color-green-light1x);
 }
 
 .languag-value {
-  height: 2.5vw;
-  padding-right: 1vw;
+  height: 5vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
   line-height: 2vw;
   color: var(--color-white);
-  border-radius: 1vw;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,7 +992,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 .ukrainian,
@@ -1005,35 +1002,47 @@ a {
 }
 
 .cheh {
-  width: 50%;
+  width: 60%;
   background-color: var(--color-green-light3x);
 }
 
 .english {
-  width: 20%;
+  width: 25%;
   background-color: var(--color-green-light3x);
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 800px) {
   .languages h2 {
-    font-size: 5vw;
+    font-size: 2rem;
   }
   .languag-wrap {
-    margin-bottom: 3.5vw;
+    margin-bottom: 5vh;
   }
   .languag-wrap h3 {
     width: 30%;
-    font-size: 3vw;
+    font-size: 1.5rem;
     padding-right: 2.3vw;
   }
   .containers-languag,
   .languag-value {
-    height: 4vw;
+    height: 5vh;
+  }
+  .languag-value {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .languag-wrap h3 {
+    font-size: 1.3rem;
+  }
+  .languag-value {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 500px) {
   .languages h2 {
-    font-size: 6vw;
+    font-size: 1.7rem;
   }
   .languag-wrap {
     display: -webkit-box;
@@ -1043,14 +1052,15 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 3.5vh;
   }
   .languag-wrap h3 {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vh;
     text-align: left;
     margin-left: 10vw;
-    font-size: 3.5vw;
+    font-size: 1.3rem;
   }
   .containers-languag {
     -ms-flex-item-align: end;
@@ -1059,7 +1069,8 @@ a {
   }
   .containers-languag,
   .languag-value {
-    height: 4.5vw;
+    height: 4vh;
+    font-size: 1rem;
   }
 }
 .Main-hobbies {
@@ -1101,40 +1112,40 @@ a {
 .Main-hobbies h3 {
   width: 80%;
   text-align: center;
-  font-size: 2.6vw;
-  margin-bottom: 1vw;
+  font-size: 1.8rem;
+  margin-bottom: 3vh;
 }
 .Main-hobbies p {
   width: 80%;
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 800px) {
   .Main-hobbies h3 {
-    font-size: 3vw;
-    margin-bottom: 1vw;
+    font-size: 1.6rem;
+    margin-bottom: 2vh;
   }
   .Main-hobbies p {
-    font-size: 2.3vw;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 500px) {
   .Main-hobbies h3 {
-    font-size: 4.5vw;
-    margin-bottom: 1vw;
+    font-size: 1.2rem;
+    margin-bottom: 1vh;
   }
   .Main-hobbies p {
-    font-size: 3.5vw;
+    font-size: 1.05rem;
   }
 }
 @media (max-width: 320px) {
   .Main-hobbies h3 {
-    font-size: 5vw;
-    margin-bottom: 1.2vw;
+    font-size: 1rem;
+    margin-bottom: 1vh;
   }
   .Main-hobbies p {
-    font-size: 4vw;
+    font-size: 0.9rem;
   }
 }
 .Main-character {
@@ -1176,40 +1187,46 @@ a {
 .Main-character h3 {
   width: 80%;
   text-align: center;
-  font-size: 2.6vw;
-  margin-bottom: 1vw;
+  font-size: 1.8rem;
+  margin-bottom: 3vh;
 }
 .Main-character p {
   width: 80%;
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {
   .Main-character h3 {
-    font-size: 3vw;
-    margin-bottom: 1vw;
+    font-size: 1.6rem;
+    margin-bottom: 2vh;
   }
   .Main-character p {
-    font-size: 2.3vw;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 650px) {
+  .Main-character h3 {
+    font-size: 1.5rem;
+  }
+  .Main-character p {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 500px) {
   .Main-character h3 {
-    font-size: 4.5vw;
-    margin-bottom: 1vw;
+    font-size: 1.3rem;
   }
   .Main-character p {
-    font-size: 3.5vw;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 320px) {
   .Main-character h3 {
-    font-size: 5vw;
-    margin-bottom: 1.2vw;
+    font-size: 1.2rem;
   }
   .Main-character p {
-    font-size: 4vw;
+    font-size: 0.8rem;
   }
 }
 .Main {

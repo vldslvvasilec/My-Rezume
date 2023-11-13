@@ -23,26 +23,38 @@
     h3 {
         width: 80%;
         text-align: center;
-        font-size: 2.6vw;
-        margin-bottom: 1vw;
+        font-size: 1.8rem;
+        margin-bottom: 3vh;
     }
 
     p {
         width: 80%;
         text-align: center;
-        font-size: 1.8vw;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 800px) {
     .Main-character {
         h3 {
-            font-size: 3vw;
-            margin-bottom: 1vw;
+            font-size: 1.6rem;
+            margin-bottom: 2vh;
         }
 
         p {
-            font-size: 2.3vw;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .Main-character {
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
         }
     }
 }
@@ -50,12 +62,11 @@
 @media (max-width: 500px) {
     .Main-character {
         h3 {
-            font-size: 4.5vw;
-            margin-bottom: 1vw;
+            font-size: 1.3rem;
         }
 
         p {
-            font-size: 3.5vw;
+            font-size: 0.9rem;
         }
     }
 }
@@ -63,12 +74,11 @@
 @media (max-width: 320px) {
     .Main-character {
         h3 {
-            font-size: 5vw;
-            margin-bottom: 1.2vw;
+            font-size: 1.2rem;
         }
 
         p {
-            font-size: 4vw;
+            font-size: 0.8rem;
         }
     }
 }

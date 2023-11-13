@@ -34,15 +34,15 @@
 
     h2 {
         align-self: center;
-        font-size: 3vw;
+        font-size: 2.5rem;
         font-weight: 600;
-        margin-bottom: 3vw;
+        margin-bottom: 2vh;
     }
 }
 
 .skill-wrap {
     display: flex;
-    margin-bottom: 2.5vw;
+    margin-bottom: 4vh;
     align-items: center;
 
     &:last-child {
@@ -50,23 +50,24 @@
     }
 
     h3 {
-        width: 10vw;
-        font-size: 2vw;
+        width: 14vw;
+        margin-right: 2vw;
+        font-size: 1.3rem;
+        text-align: end;
         word-wrap: break-word;
-
     }
 }
 
 .containers-skills {
     width: 60%;
-    height: 2.5vw;
+    height: 1.6rem;
     background-color: #ddd;
     border-radius: 1vw;
     box-shadow: 0px 0px 8px var(--color-green-light1x);
 }
 
 .skills-value {
-    height: 2.5vw;
+    height: 1.6rem;
     padding-right: 1vw;
     line-height: 2vw;
     color: var(--color-white);
@@ -74,9 +75,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 2vw;
+    font-size: 1rem;
 }
-
 
 .html,
 .css,
@@ -104,19 +104,38 @@
         padding-left: 1vw;
 
         h2 {
-            font-size: 5vw;
+            font-size: 2rem;
         }
     }
 
     .skill-wrap {
         h3 {
             width: 14vw;
-            font-size: 2.8vw;
+            font-size: 1.2rem;
         }
     }
 
     .containers-skills {
-        width: 55%;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .skill-wrap {
+        h3 {
+            width: 15vw;
+            font-size: 1rem;
+        }
+    }
+
+    .containers-skills {
+        height: 1.4rem;
+        width: 43%;
+    }
+
+    .skills-value {
+        height: 1.4rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -132,47 +151,51 @@
         width: 90%;
 
         h2 {
-            margin-bottom: 3vw;
+            font-size: 1.1rem;
+            margin-bottom: 0.5vh;
         }
     }
 
     .front-end {
-        margin-bottom: 5vw;
+        margin-bottom: 2vh;
     }
 
     .skill-wrap {
         display: flex;
         flex-direction: column;
+        margin-bottom: 1vh;
 
         h3 {
             width: 50vw;
-            font-size: 3.5vw;
+            font-size: 0.8rem;
             align-self: flex-start;
             margin-left: 10vw;
+            text-align: start;
+            margin-bottom: 1vh;
         }
     }
 
     .containers-skills {
         width: 65%;
-        height: 3.5vw;
+        height: 2vh;
         align-self: flex-end;
         margin-right: 10vw;
-
     }
 
     .skills-value {
-        height: 3.5vw;
+        height: 2vh;
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width: 350px) {
+// @media screen and (max-width: 350px) {
 
-    .containers-skills,
-    .skills-value {
-        height: 4vw;
-    }
+//     .containers-skills,
+//     .skills-value {
+//         height: 4vw;
+//     }
 
-    .skill-wrap {
-        margin-bottom: 5vw;
-    }
-}
+//     .skill-wrap {
+//         margin-bottom: 5vw;
+//     }
+// }
