@@ -8,14 +8,14 @@
   --color-green-dark2x: #061900;
   --color-green-light1x: #49A82B;
   --color-green-light2x: #64A84E;
-  --color-green-light3x:#4caf50;
+  --color-green-light3x: #4caf50;
   --color-white: #fff;
   --color-black: #000;
   --font-family-Raleway: "Raleway",
       sans-serif;
   --font-family-header: font-family: "Vollkorn",
-      serif;
-  --font-family-Home-italic: "Playpen Sans", cursive;
+      sans-serif;
+  --font-family-Home-italic: "Playpen Sans", cursive, sans-serif;
 }
 
 * {
@@ -1172,7 +1172,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: var(--font-family-header);
   color: var(--color-white);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
