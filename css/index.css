@@ -563,9 +563,6 @@ a {
   .home-my-foto {
     margin: 0 0 1.5vw 0;
   }
-  .home-my-foto img {
-    width: 8rem;
-  }
   .home-my-conten {
     width: 90%;
     -webkit-box-pack: start;
@@ -1003,7 +1000,7 @@ a {
   .lsg_works_jobs_details1,
   .lsg_works_jobs_details2,
   .lsg_works_jobs_details3 {
-    font-size: 0.77rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1015,7 +1012,7 @@ a {
   .lsg_works_jobs_details1,
   .lsg_works_jobs_details2,
   .lsg_works_jobs_details3 {
-    font-size: 0.69rem;
+    font-size: 0.73rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1027,7 +1024,7 @@ a {
   .lsg_works_jobs_details1,
   .lsg_works_jobs_details2,
   .lsg_works_jobs_details3 {
-    font-size: 0.61rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1039,7 +1036,7 @@ a {
   .lsg_works_jobs_details1,
   .lsg_works_jobs_details2,
   .lsg_works_jobs_details3 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 .Main-educations {
@@ -1201,7 +1198,7 @@ a {
   .lsg_educations_jobs_details1,
   .lsg_educations_jobs_details2,
   .lsg_educations_jobs_details3 {
-    font-size: 0.77rem;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1213,7 +1210,7 @@ a {
   .lsg_educations_jobs_details1,
   .lsg_educations_jobs_details2,
   .lsg_educations_jobs_details3 {
-    font-size: 0.69rem;
+    font-size: 0.73rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1225,7 +1222,7 @@ a {
   .lsg_educations_jobs_details1,
   .lsg_educations_jobs_details2,
   .lsg_educations_jobs_details3 {
-    font-size: 0.61rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1237,7 +1234,7 @@ a {
   .lsg_educations_jobs_details1,
   .lsg_educations_jobs_details2,
   .lsg_educations_jobs_details3 {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 .Main-languages {
