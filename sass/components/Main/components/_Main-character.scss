@@ -11,6 +11,7 @@
     padding: 2vw;
     margin-top: 15vh;
     flex-direction: column;
+    font-family: var(--font-family-header);
     color: var(--color-white);
     box-sizing: border-box;
     transition: 1s;
@@ -36,12 +37,12 @@
 @media (max-width: 800px) {
     .Main-character {
         h3 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             margin-bottom: 2vh;
         }
 
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
     }
 }
@@ -61,23 +62,23 @@
 @media (max-width: 500px) {
     .Main-character {
         h3 {
-            font-size: 1.3rem;
-        }
-
-        p {
-            font-size: 0.9rem;
-        }
-    }
-}
-
-@media (max-width: 320px) {
-    .Main-character {
-        h3 {
             font-size: 1.2rem;
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .Main-character {
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 0.7rem;
         }
     }
 }

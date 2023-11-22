@@ -37,12 +37,12 @@
 @media (max-width: 800px) {
     .Main-hobbies {
         h3 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             margin-bottom: 2vh;
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 }
@@ -55,20 +55,20 @@
         }
 
         p {
-            font-size: 1.05rem;
+            font-size: 0.85rem;
         }
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
     .Main-hobbies {
         h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 1vh;
         }
 
         p {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
         }
     }
 }

@@ -1,3 +1,4 @@
+//! Изменение языка
 const allLang = ["en", "ru", "cz", "ua"];
 var langItems = document.getElementsByClassName("language-item");
 var btnImg = document.getElementById("btn-img");
