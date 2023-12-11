@@ -97,7 +97,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
     .front-end,
     .back-end {
         width: 55%;
@@ -188,14 +187,13 @@
     }
 }
 
-// @media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
+    .containers-skills,
+    .skills-value {
+        height: 4vw;
+    }
 
-//     .containers-skills,
-//     .skills-value {
-//         height: 4vw;
-//     }
-
-//     .skill-wrap {
-//         margin-bottom: 5vw;
-//     }
-// }
+    .skill-wrap {
+        margin-bottom: 5vw;
+    }
+}

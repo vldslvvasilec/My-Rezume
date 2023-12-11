@@ -1,11 +1,12 @@
 .Header-Drop-menu {
     position: absolute;
     background-color: var(--color-green-dark2x);
-    margin-top: 0.1vw;
+    margin-top: 0.01vw;
     padding: 1vw;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    z-index: 2;
+    position: fixed;
+    z-index: 9999;
 
     visibility: hidden;
     opacity: 0;
@@ -58,7 +59,6 @@
 @media screen and (max-width: 800px) {
     .Header-Drop-menu {
         margin-top: 0.07vw;
-
 
         li {
             svg {

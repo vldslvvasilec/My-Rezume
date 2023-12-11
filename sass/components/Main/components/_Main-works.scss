@@ -115,6 +115,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
     .myworks1,
     .myworks2,
     .myworks3 {
@@ -129,10 +130,14 @@
 }
 
 @media screen and (max-width: 650px) {
+
     .myworks1,
     .myworks2,
     .myworks3 {
         font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .lsg_works_jobs_details1,
@@ -140,9 +145,31 @@
     .lsg_works_jobs_details3 {
         font-size: 0.73rem;
     }
+
+    .lsg_works_datum1,
+    .lsg_works_datum2,
+    .lsg_works_datum3 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .works_constent1,
+    .works_constent2,
+    .works_constent3 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .MainWorkWrap {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
+
     .myworks1,
     .myworks2,
     .myworks3 {
@@ -157,6 +184,7 @@
 }
 
 @media screen and (max-width: 350px) {
+
     .myworks1,
     .myworks2,
     .myworks3 {

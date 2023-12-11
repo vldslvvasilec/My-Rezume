@@ -233,4 +233,10 @@ const langArr = {
         ua: "Вивчення технологічних процесів, створення технічної документації,розробка довгострокових планів робіт.",
         cz: "Studium technologických procesů, tvorba technické dokumentace, a vypracovánídlouhodobých plánů práce.",
     },
+    lsg_footer: {
+        ru: "Прага 2023",
+        en: "Prague 2023",
+        ua: "Прага 2023",
+        cz: "Praha 2023",
+    },
 };
