@@ -1,0 +1,119 @@
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 0px 30px var(--color-green-light1x);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px var(--color-green-light1x);
+    }
+
+    100% {
+        box-shadow: 0px 0px 30px var(--color-green-light1x);
+    }
+}
+
+@keyframes modalWindowEmail {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes modalWindowEmailClose {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.SendEmail {
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.SendEmailForm {
+    background-color: var(--color-white);
+    border-radius: 2vw;
+    border: 0.5vw solid rgba($color: #000, $alpha: 0.2);
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    animation: shadow-pulse 3s infinite;
+
+    .labelName,
+    .labelEmail,
+    .labelMessage {
+        font-family: var(--font-family-header);
+        font-weight: 900;
+        margin: 1vw 0 1vw 1vw;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .name,
+    .email,
+    .message {
+        padding: 0.5vw;
+        border-radius: 1vw;
+        border: 0.2vw solid rgba($color: #000, $alpha: 0.2);
+        outline: none;
+    }
+
+    .EmailButtons {
+        margin-top: 1vw;
+    }
+
+    .emailButtonsSubmit,
+    .emailButtonsCencel {
+        padding: 0.5vw 1vw;
+        background-color: darkgray;
+        border-radius: 1vw;
+        border: 0.2vw solid rgba($color: #000, $alpha: 0.2);
+        font-weight: 600;
+
+        &:last-child {
+            margin-left: 2vw;
+        }
+
+        &:active {
+            transform: translateY(0.2vw);
+        }
+    }
+
+    .emailButtonsSubmit {
+        background-color: rgb(70, 250, 70);
+    }
+}
+
+.EmailButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.SendEmailShow {
+    animation: modalWindowEmail 1s ease-in-out forwards;
+}
+
+.SendEmailClose {
+    animation: modalWindowEmailClose 0.5s ease-in-out forwards;
+}

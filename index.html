@@ -8,6 +8,62 @@
     </head>
     <body>
         <div id="root">
+            <div class="SendEmail">
+                <form class="SendEmailForm">
+                    <label for="Name" class="labelName"
+                        ><span class="SendEmailName">Ваше имя</span></label
+                    ><input
+                        type="text"
+                        id="Name"
+                        name="name"
+                        class="name"
+                        required />
+                    <label for="email" class="labelEmail"
+                        ><span class="SendEmailEmail">Ваш Email</span></label
+                    ><input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="email"
+                        required /><label for="message" class="labelMessage"
+                        ><span class="SendEmailText"
+                            >Текст сообщения</span
+                        ></label
+                    ><textarea
+                        name="message"
+                        id="message"
+                        class="message"
+                        cols="50"
+                        rows="4"
+                        style="resize: none"
+                        required></textarea>
+                    <section class="EmailButtons">
+                        <button class="emailButtonsSubmit" type="submit">
+                            <span class="emailButtonsSubmit">Отправить</span>
+                        </button>
+                        <button
+                            class="emailButtonsCencel"
+                            type="button"
+                            onclick="resetAndCloseEmail()">
+                            <span class="SendEmailCancel">Отмена</span>
+                        </button>
+                    </section>
+                </form>
+            </div>
+            <div class="LoadPdfWindow">
+                <section class="LoadPdfWindowWrap">
+                    <section class="LoadPdfWraperP">
+                        <span class="lsg_LoadPdfWindow_question"></span
+                        ><span class="LoadPdfWindow_lang">EN</span>
+                    </section>
+                    <section class="LoadPdfButtons">
+                        <button type="button" class="LoadPdfButtonsOK"></button
+                        ><button
+                            type="button"
+                            class="LoadPdfButtonsCancel"></button>
+                    </section>
+                </section>
+            </div>
             <div class="contacts">
                 <section class="contact_telefon">
                     <section class="contactsElem contactTelefonButton">
@@ -23,12 +79,12 @@
                     </section>
                     <section class="contact_wrap">
                         <section class="contactsElem contact_telegram">
-                            <a href="#"
+                            <a href="https://t.me/Vladi2511" target="_blank"
                                 ><img src="./assets/icons/telegram.svg" alt=""
                             /></a>
                         </section>
                         <section class="contactsElem contact_whatsapp">
-                            <a href="#"
+                            <a href="https://wa.me/420705923419" target="_blank"
                                 ><img src="./assets/icons/whatsapp.svg" alt=""
                             /></a>
                         </section>
@@ -38,7 +94,9 @@
                             /></a>
                         </section>
                         <section class="contactsElem contact_linkedln">
-                            <a href="#"
+                            <a
+                                href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87-726242262/"
+                                target="_blank"
                                 ><img src="./assets/icons/linkedin.svg" alt=""
                             /></a>
                         </section>
@@ -207,10 +265,18 @@
                         </svg>
                     </section>
                     <ul class="PdfList">
-                        <li class="PdfElem PdfListLangEN"><span>EN</span></li>
-                        <li class="PdfElem PdfListLangCZ"><span>CZ</span></li>
-                        <li class="PdfElem PdfListLangUA"><span>UA</span></li>
-                        <li class="PdfElem PdfListLangRU"><span>RU</span></li>
+                        <li class="PdfElem PdfListLangEN" value="EN">
+                            <span>EN</span>
+                        </li>
+                        <li class="PdfElem PdfListLangCZ" value="CZ">
+                            <span>CZ</span>
+                        </li>
+                        <li class="PdfElem PdfListLangUA" value="UA">
+                            <span>UA</span>
+                        </li>
+                        <li class="PdfElem PdfListLangRU" value="RU">
+                            <span>RU</span>
+                        </li>
                     </ul>
                 </section>
             </div>
@@ -797,11 +863,15 @@
                 <p class="lsg_footer Footer-p">Прага 2023</p>
             </footer>
         </div>
-
-        <script src="/My-Rezume/js/lang.js"></script>
-        <script src="/My-Rezume/js/Search-lang.js"></script>
-        <script src="/My-Rezume/js/main.js"></script>
-        <script src="/My-Rezume/js/Contakts-js.js"></script>
-        <script src="/My-Rezume/js/textAnim.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script src="/js/SendEmail.js"></script>
+        <script src="/js/Header.js"></script>
+        <script src="/js/lang.js"></script>
+        <script src="/js/Search-lang.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/Contakts-js.js"></script>
+        <script src="/js/textAnim.js"></script>
+        <script src="/js/Email.js"></script>
+        <script src="/js/LoadPdf.js"></script>
     </body>
 </html>

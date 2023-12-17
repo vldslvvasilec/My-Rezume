@@ -239,4 +239,58 @@ const langArr = {
         ua: "Прага 2023",
         cz: "Praha 2023",
     },
+    SendEmailName: {
+        ru: "Ваше имя",
+        en: "Your name",
+        ua: "Ваше ім'я",
+        cz: "Vaše jméno",
+    },
+    SendEmailEmail: {
+        ru: "Ваш емаил",
+        en: "Your email",
+        ua: "Ваш емейл",
+        cz: "Váš e-mail",
+    },
+    SendEmailText: {
+        ru: "Текст сообщения",
+        en: "Message text",
+        ua: "Текст повідомлення",
+        cz: "Text zprávy",
+    },
+    emailButtonsSubmit: {
+        ru: "Отправить",
+        en: "Send",
+        ua: "Надіслати",
+        cz: "Odeslat",
+    },
+    emailButtonsSubmit: {
+        ru: "Отправить",
+        en: "Send",
+        ua: "Надіслати",
+        cz: "Odeslat",
+    },
+    SendEmailCancel: {
+        ru: "Отмена",
+        en: "Cancel",
+        ua: "Скасувати",
+        cz: "Zrušit",
+    },
+    lsg_LoadPdfWindow_question: {
+        ru: "Скачать резюме в формате PDF на ",
+        en: "Download resume in PDF format in ",
+        ua: "Завантажити резюме у форматі PDF на ",
+        cz: "Stáhnout životopis ve formátu PDF v ",
+    },
+    LoadPdfButtonsOK: {
+        ru: "Скачать",
+        en: "Download",
+        ua: "Завантажити",
+        cz: "Stáhnout",
+    },
+    LoadPdfButtonsCancel: {
+        ru: "Отмена",
+        en: "Cancel",
+        ua: "Скасувати",
+        cz: "Zrušit",
+    },
 };

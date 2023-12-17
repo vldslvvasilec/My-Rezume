@@ -45,13 +45,13 @@
     }
 }
 
-.show {
+.Show {
     visibility: visible;
     opacity: 0.95;
     transform: rotateY(0rem);
 }
 
-.arrow {
+.arrow-up {
     transform: rotate(180deg);
     transition: 0.2s ease;
 }

@@ -82,6 +82,10 @@
         box-shadow: inset 0 0 1vw rgba(255, 255, 255, 0.2);
         cursor: pointer;
     }
+
+    svg {
+        transition: 0.2s;
+    }
 }
 
 .lsg_educations_jobs_details1,
@@ -105,8 +109,10 @@
     visibility: visible;
 }
 
-.Arrow {
-    transform: rotate(180deg);
+.arrow {
+    svg {
+        transform: rotate(180deg);
+    }
 }
 
 @media screen and (max-width: 800px) {

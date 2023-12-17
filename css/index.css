@@ -34,6 +34,35 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
+            box-shadow: 0px 0px 20px var(--color-green-light1x);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
+            box-shadow: 0px 0px 20px var(--color-green-light1x);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+}
 .Home,
 .skills,
 .portfolio,
@@ -43,7 +72,7 @@ a {
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
-  z-index: 10;
+  z-index: 2;
 }
 
 .skills._active {
@@ -107,7 +136,11 @@ a {
 .myworks2,
 .myworks3,
 .myeducations1,
-.myeducations2 {
+.myeducations2,
+.works_jobs_btn1,
+.works_jobs_btn2,
+.works_jobs_btn3,
+.educations_jobs_btn1 {
   -webkit-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
   opacity: 0;
@@ -119,7 +152,7 @@ a {
 .works_jobs_btn2,
 .works_jobs_btn3,
 .educations_jobs_btn1 {
-  z-index: 10;
+  z-index: 2;
 }
 
 .lsg_main_languages {
@@ -173,6 +206,281 @@ a {
   opacity: 1;
 }
 
+@keyframes shadow-pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
+            box-shadow: 0px 0px 20px var(--color-green-light1x);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
+            box-shadow: 0px 0px 30px var(--color-green-light1x);
+  }
+}
+@-webkit-keyframes modalWindowEmail {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes modalWindowEmail {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes modalWindowEmailClose {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes modalWindowEmailClose {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.SendEmail {
+  width: 100%;
+  position: fixed;
+  top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25em;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.SendEmailForm {
+  background-color: var(--color-white);
+  border-radius: 2vw;
+  border: 0.5vw solid rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2vw;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+}
+.SendEmailForm .labelName,
+.SendEmailForm .labelEmail,
+.SendEmailForm .labelMessage {
+  font-family: var(--font-family-header);
+  font-weight: 900;
+  margin: 1vw 0 1vw 1vw;
+}
+.SendEmailForm .labelName:first-child,
+.SendEmailForm .labelEmail:first-child,
+.SendEmailForm .labelMessage:first-child {
+  margin-top: 0;
+}
+.SendEmailForm .name,
+.SendEmailForm .email,
+.SendEmailForm .message {
+  padding: 0.5vw;
+  border-radius: 1vw;
+  border: 0.2vw solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.SendEmailForm .EmailButtons {
+  margin-top: 1vw;
+}
+.SendEmailForm .emailButtonsSubmit,
+.SendEmailForm .emailButtonsCencel {
+  padding: 0.5vw 1vw;
+  background-color: darkgray;
+  border-radius: 1vw;
+  border: 0.2vw solid rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+.SendEmailForm .emailButtonsSubmit:last-child,
+.SendEmailForm .emailButtonsCencel:last-child {
+  margin-left: 2vw;
+}
+.SendEmailForm .emailButtonsSubmit:active,
+.SendEmailForm .emailButtonsCencel:active {
+  -webkit-transform: translateY(0.2vw);
+          transform: translateY(0.2vw);
+}
+.SendEmailForm .emailButtonsSubmit {
+  background-color: rgb(70, 250, 70);
+}
+
+.EmailButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SendEmailShow {
+  -webkit-animation: modalWindowEmail 1s ease-in-out forwards;
+          animation: modalWindowEmail 1s ease-in-out forwards;
+}
+
+.SendEmailClose {
+  -webkit-animation: modalWindowEmailClose 0.5s ease-in-out forwards;
+          animation: modalWindowEmailClose 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes modalWindowPdf {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes modalWindowPdf {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes modalWindowPdfClose {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes modalWindowPdfClose {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.LoadPdfWindow {
+  position: fixed;
+  width: 100%;
+  top: 20vh;
+  font-family: var(--font-family-header);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 11;
+  -webkit-transition: opasity 1s, visibility 1s;
+  transition: opasity 1s, visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.LoadPdfWindowWrap {
+  background-color: var(--color-white);
+  border-radius: 2vw;
+  border: 0.5vw solid rgba(0, 0, 0, 0.2);
+  width: 50%;
+  padding: 2vw;
+  -webkit-animation: shadow-pulse 3s infinite;
+          animation: shadow-pulse 3s infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LoadPdfWraperP {
+  font-weight: 500;
+  font-size: 1.25em;
+  margin-bottom: 1.5vw;
+}
+
+.LoadPdfButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.LoadPdfButtonsOK,
+.LoadPdfButtonsCancel {
+  padding: 0.5vw 1vw;
+  background-color: darkgray;
+  border-radius: 1vw;
+  border: 0.2vw solid rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+.LoadPdfButtonsOK:last-child,
+.LoadPdfButtonsCancel:last-child {
+  margin-left: 2vw;
+}
+.LoadPdfButtonsOK:active,
+.LoadPdfButtonsCancel:active {
+  -webkit-transform: translateY(0.2vw);
+          transform: translateY(0.2vw);
+}
+
+.LoadPdfButtonsOK {
+  background-color: rgb(70, 250, 70);
+}
+
+.PdfShowModal {
+  -webkit-animation: modalWindowPdf 1s ease-in-out forwards;
+          animation: modalWindowPdf 1s ease-in-out forwards;
+}
+
+.PdfCloseModal {
+  -webkit-animation: modalWindowPdfClose 0.5s ease-in-out forwards;
+          animation: modalWindowPdfClose 0.5s ease-in-out forwards;
+}
+
 .Header-Drop-menu {
   position: absolute;
   background-color: var(--color-green-dark2x);
@@ -220,14 +528,14 @@ a {
   color: var(--color-white);
 }
 
-.show {
+.Show {
   visibility: visible;
   opacity: 0.95;
   -webkit-transform: rotateY(0rem);
           transform: rotateY(0rem);
 }
 
-.arrow {
+.arrow-up {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: 0.2s ease;
@@ -1308,34 +1616,6 @@ a {
   -webkit-animation: shadow-pulse 3s infinite;
           animation: shadow-pulse 3s infinite;
 }
-@-webkit-keyframes shadow-pulse {
-  0% {
-    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
-            box-shadow: 0px 0px 30px var(--color-green-light1x);
-  }
-  50% {
-    -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
-            box-shadow: 0px 0px 20px var(--color-green-light1x);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
-            box-shadow: 0px 0px 30px var(--color-green-light1x);
-  }
-}
-@keyframes shadow-pulse {
-  0% {
-    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
-            box-shadow: 0px 0px 30px var(--color-green-light1x);
-  }
-  50% {
-    -webkit-box-shadow: 0px 0px 20px var(--color-green-light1x);
-            box-shadow: 0px 0px 20px var(--color-green-light1x);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 30px var(--color-green-light1x);
-            box-shadow: 0px 0px 30px var(--color-green-light1x);
-  }
-}
 
 .home-my-foto {
   display: -webkit-box;
@@ -1923,7 +2203,7 @@ a {
   visibility: visible;
 }
 
-.Arrow {
+.arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -2134,6 +2414,12 @@ a {
           box-shadow: inset 0 0 1vw rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
+.educations_jobs_btn1 svg,
+.educations_jobs_btn2 svg,
+.educations_jobs_btn3 svg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 
 .lsg_educations_jobs_details1,
 .lsg_educations_jobs_details2,
@@ -2159,7 +2445,7 @@ a {
   visibility: visible;
 }
 
-.Arrow {
+.arrow svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -2671,6 +2957,20 @@ a {
     background-position: 50% 0%;
   }
 }
+.translucentBg {
+  position: relative;
+}
+.translucentBg::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .Footer {
   margin: 0;
   padding: 1vh 0;
@@ -2703,7 +3003,7 @@ a {
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
-  z-index: 10;
+  z-index: 2;
 }
 
 .skills._active {
@@ -2767,7 +3067,11 @@ a {
 .myworks2,
 .myworks3,
 .myeducations1,
-.myeducations2 {
+.myeducations2,
+.works_jobs_btn1,
+.works_jobs_btn2,
+.works_jobs_btn3,
+.educations_jobs_btn1 {
   -webkit-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
   opacity: 0;
@@ -2779,7 +3083,7 @@ a {
 .works_jobs_btn2,
 .works_jobs_btn3,
 .educations_jobs_btn1 {
-  z-index: 10;
+  z-index: 2;
 }
 
 .lsg_main_languages {

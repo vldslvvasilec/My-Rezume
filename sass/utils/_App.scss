@@ -12,3 +12,16 @@ ol {
 a {
     text-decoration: none;
 }
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 0px 30px var(--color-green-light1x);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px var(--color-green-light1x);
+    }
+
+    100% {
+        box-shadow: 0px 0px 30px var(--color-green-light1x);
+    }
+}
