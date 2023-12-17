@@ -32,7 +32,7 @@ PdfButtonCancel.addEventListener("click", function () {
 PdfButtonOk.addEventListener("click", function () {
     // Добавление ссылки, скачивание файла от Lang, удаление ссылки после скачивания, закрытие окна
     let a = document.createElement("a");
-    a.href = `/My-Resume/assets/pdf/Rezume${PdfUserLang}.pdf`;
+    // a.href = `/My-Resume/assets/pdf/Rezume${PdfUserLang}.pdf`;
     a.download = `/assets/pdf/Rezume${PdfUserLang}.pdf`;
     document.body.appendChild(a);
     a.click();
