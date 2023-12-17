@@ -4,7 +4,7 @@ const PdfButtonsMass = document.querySelectorAll("li.PdfElem");
 const PdfButtonOk = document.querySelector(".LoadPdfButtonsOK");
 const PdfButtonCancel = document.querySelector(".LoadPdfButtonsCancel");
 let PdfUserLang;
-let PdfFileUrl = `/My-Rezume/pdf/Rezume${PdfUserLang}.pdf`;
+let PdfFileUrl = `/My-Rezume/assets/pdf/Rezume${PdfUserLang}.pdf`;
 let PdfFileName = `Rezume${PdfUserLang}.pdf`;
 // Закрытие модалки PDF, открытие экрана
 const ClosePdfWindow = () => {
@@ -31,8 +31,8 @@ PdfButtonCancel.addEventListener("click", function () {
 PdfButtonOk.addEventListener("click", function () {
     // Добавление ссылки, скачивание файла от Lang, удаление ссылки после скачивания, закрытие окна
     let a = document.createElement("a");
-    a.href = `/assets/pdf/Rezume${PdfUserLang}.pdf`;
-    a.download = `pdf/Rezume${PdfUserLang}.pdf`;
+    a.href = `/My-Resume/assets/pdf/Rezume${PdfUserLang}.pdf`;
+    a.download = `/My-Resume/assets/pdf/Rezume${PdfUserLang}.pdf`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
