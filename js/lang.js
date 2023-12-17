@@ -46,10 +46,10 @@ const langArr = {
         cz: "Záliby",
     },
     lsg_header_Characteristic: {
-        ru: "Характеристика",
-        en: "Profile",
-        ua: "Характеристика",
-        cz: "Charakteristika",
+        ru: "Обо мне",
+        en: "About Me",
+        ua: "Про мене",
+        cz: "O mně",
     },
     lsg_main_velcome: {
         ru: "Добро пожаловать на мою страницу.",
