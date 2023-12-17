@@ -4,7 +4,7 @@ const PdfButtonsMass = document.querySelectorAll("li.PdfElem");
 const PdfButtonOk = document.querySelector(".LoadPdfButtonsOK");
 const PdfButtonCancel = document.querySelector(".LoadPdfButtonsCancel");
 let PdfUserLang;
-let PdfFileUrl = `pdf/Rezume${PdfUserLang}.pdf`;
+let PdfFileUrl = `/My-Rezume/pdf/Rezume${PdfUserLang}.pdf`;
 let PdfFileName = `Rezume${PdfUserLang}.pdf`;
 // Закрытие модалки PDF, открытие экрана
 const ClosePdfWindow = () => {
