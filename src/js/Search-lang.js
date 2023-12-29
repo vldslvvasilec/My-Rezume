@@ -11,9 +11,9 @@ if (LocationIndex) {
 }
 
 if (languageIndex) {
-    btnImg.src = `/src/assets/icons/language/${languageIndex}.png`;
+    btnImg.src = `./src/assets/icons/language/${languageIndex}.png`;
     btnTitle.innerHTML = languageIndex;
-} else btnImg.src = `/src/assets/icons/language/EN.png`;
+} else btnImg.src = `./src/assets/icons/language/EN.png`;
 
 for (var i = 0; i < langItems.length; i++) {
     var langItem = langItems[i];
@@ -21,7 +21,7 @@ for (var i = 0; i < langItems.length; i++) {
 }
 
 function changeLanguage(e) {
-    btnImg.src = "/src/assets/icons/language/" + this.dataset.lang + ".png";
+    btnImg.src = "./src/assets/icons/language/" + this.dataset.lang + ".png";
     btnTitle.innerText = this.dataset.lang;
     location.href = window.location.pathname + "#" + this.dataset.lang;
     location.reload();
