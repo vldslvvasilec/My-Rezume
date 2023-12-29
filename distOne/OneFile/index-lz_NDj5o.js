@@ -113,7 +113,7 @@ X.addEventListener("click", function () {
 });
 G.addEventListener("click", function () {
     let e = document.createElement("a");
-    (e.href = `../../src/assets/pdf/Rezume${f}.pdf`),
+    (e.href = `src/assets/pdf/Rezume${f}.pdf`),
         (e.download = `Rezume${f}.pdf`),
         document.body.appendChild(e),
         e.click(),
