@@ -1,0 +1,225 @@
+@keyframes PdfAnimation {
+    0% {
+        rotate: 10deg;
+    }
+
+    50% {
+        rotate: -10deg;
+    }
+
+    100% {
+        rotate: 10deg;
+    }
+}
+
+@keyframes PdfListLangENAnim {
+    0% {
+        transform: rotate(-220deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-170deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes PdfListLangCZAnim {
+    0% {
+        transform: rotate(-170deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-120deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes PdfListLangUAAnim {
+    0% {
+        transform: rotate(-120deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-70deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes PdfListLangRUAnim {
+    0% {
+        transform: rotate(-70deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(-20deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes PdfListLangENAnimClose {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes PdfListLangCZAnimClose {
+    0% {
+        transform: rotate(-120deg);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-170deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes PdfListLangUAAnimClose {
+    0% {
+        transform: rotate(-70deg);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-120deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes PdfListLangRUAnimClose {
+    0% {
+        transform: rotate(-20deg);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-70deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.PdfShow {
+    visibility: visible;
+    opacity: 1;
+}
+
+.PdfLoad {
+    padding: 0.1vw;
+    width: calc(var(--index) * 3.2);
+    height: calc(var(--index) * 3.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: 0.35vw solid #ffffffa5;
+    border-radius: 50%;
+    left: 4vw;
+    top: 75vh;
+    cursor: pointer;
+    z-index: 5;
+
+    svg {
+        width: calc(var(--index) * 1.8);
+        height: calc(var(--index) * 1.8);
+        opacity: 0.7;
+        animation: PdfAnimation 2s ease infinite;
+    }
+}
+
+.PdfListLangEN,
+.PdfListLangCZ,
+.PdfListLangUA,
+.PdfListLangRU {
+    width: calc(var(--index) * 2.5);
+    height: calc(var(--index) * 2.5);
+    position: absolute;
+    left: calc(var(--index) * 0.7);
+    bottom: calc(var(--index) * -3.9);
+    transform-origin: 20% calc(var(--index) * -3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    border: 0.35vw solid #ffffffa5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: calc(var(--index));
+}
+
+.PdfListLangEN {
+    transform: rotate(-170deg);
+
+    span {
+        transform: rotate(170deg);
+    }
+}
+
+.PdfListLangCZ {
+    transform: rotate(-120deg);
+
+    span {
+        transform: rotate(120deg);
+    }
+}
+
+.PdfListLangUA {
+    transform: rotate(-70deg);
+
+    span {
+        transform: rotate(70deg);
+    }
+}
+
+.PdfListLangRU {
+    transform: rotate(-20deg);
+
+    span {
+        transform: rotate(20deg);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .PdfLoad {
+        width: calc(var(--index) * 4);
+        height: calc(var(--index) * 4);
+
+        svg {
+            width: calc(var(--index) * 4.5);
+        }
+    }
+
+    .PdfListLangEN,
+    .PdfListLangCZ,
+    .PdfListLangUA,
+    .PdfListLangRU {
+        width: calc(var(--index) * 2.8);
+        height: calc(var(--index) * 2.8);
+        font-size: calc(var(--index) * 1.2);
+    }
+}
