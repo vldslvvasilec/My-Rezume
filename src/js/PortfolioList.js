@@ -2,27 +2,27 @@ const ListPortfolio = [
     {
         titlePort: "Wood Parallax",
         linkPort: "https://vldslvvasilec.github.io/WoodParallax/",
-        imagePort: "/src/assets/images/PortfolioImg/WoodParallax.jpg",
+        imagePort: "./src/assets/images/PortfolioImg/WoodParallax.jpg",
     },
     {
         titlePort: "Cosmo",
         linkPort: "https://vldslvvasilec.github.io/Project-Cosmo/",
-        imagePort: "/src/assets/images/PortfolioImg/Dribbble-min.png",
+        imagePort: "./src/assets/images/PortfolioImg/Dribbble-min.png",
     },
     {
         titlePort: "Cosmo",
         linkPort: "https://vldslvvasilec.github.io/Project-Cosmo/",
-        imagePort: "/src/assets/images/PortfolioImg/Dribbble-min.png",
+        imagePort: "./src/assets/images/PortfolioImg/Dribbble-min.png",
     },
     {
         titlePort: "Wood Parallax",
         linkPort: "https://vldslvvasilec.github.io/WoodParallax/",
-        imagePort: "/src/assets/images/PortfolioImg/WoodParallax.jpg",
+        imagePort: "./src/assets/images/PortfolioImg/WoodParallax.jpg",
     },
     {
         titlePort: "Cosmo",
         linkPort: "https://vldslvvasilec.github.io/Project-Cosmo/",
-        imagePort: "/src/assets/images/PortfolioImg/Dribbble-min.png",
+        imagePort: "./src/assets/images/PortfolioImg/Dribbble-min.png",
     },
 ];
 const initialDelay = 0.3;
