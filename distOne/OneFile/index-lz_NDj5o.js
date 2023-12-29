@@ -38,13 +38,13 @@ let i;
 E && (i = E.toUpperCase());
 i
     ? ((u.src = `./src/assets/icons/language/${i}.png`), (P.innerHTML = i))
-    : (u.src = "/src/assets/icons/language/EN.png");
+    : (u.src = "./src/assets/icons/language/EN.png");
 for (var d = 0; d < p.length; d++) {
     var H = p[d];
     H.onclick = R;
 }
 function R(e) {
-    (u.src = "/src/assets/icons/language/" + this.dataset.lang + ".png"),
+    (u.src = "./src/assets/icons/language/" + this.dataset.lang + ".png"),
         (P.innerText = this.dataset.lang),
         (location.href = window.location.pathname + "#" + this.dataset.lang),
         location.reload();
