@@ -217,7 +217,7 @@ const langArr = {
     },
     lsg_educations_name_title2: {
         ru: "Днепропетровский национальный горный университет Украины",
-        en: "Dniprovskyi Naonal Mining University of Ukraine",
+        en: "Dniprovskyi National Mining University of Ukraine",
         ua: "Дніпропетровський національний гірничий університет України",
         cz: "Dněpropetrovská národní hornická univerzita Ukrajiny",
     },
