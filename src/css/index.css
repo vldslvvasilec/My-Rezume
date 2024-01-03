@@ -336,7 +336,7 @@ a {
 }
 .SendEmailForm .emailButtonsSubmitBut,
 .SendEmailForm .emailButtonsCencelBut {
-  width: 30%;
+  max-width: 35vw;
   padding: 0.5vh 1vw;
   background-color: darkgray;
   border-radius: 1vw;
