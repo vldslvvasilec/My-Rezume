@@ -529,7 +529,6 @@ a {
   }
 }
 .Header-Drop-menu {
-  position: absolute;
   background-color: var(--color-green-dark2x);
   margin-top: 0.01vw;
   padding: 1vw;
@@ -767,13 +766,15 @@ a {
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#124c00), to(#061900));
   background-image: linear-gradient(to bottom, #124c00, #061900);
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 3;
 }
 
 .nav-bar {
   width: 50%;
+  position: relative;
+  z-index: 3;
 }
 
 .Header-nav-list {
@@ -1567,7 +1568,9 @@ a {
   .contact_whatsapp,
   .contact_email,
   .contact_linkedln {
-    bottom: calc(var(--index) * -7);
+    bottom: calc(var(--index) * -8);
+    -webkit-transform-origin: 20% calc(var(--index) * -4);
+            transform-origin: 20% calc(var(--index) * -4);
     width: calc(var(--index) * 6);
     height: calc(var(--index) * 6);
   }
@@ -1681,7 +1684,6 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    margin-top: 10vh;
   }
   .home-my-conten {
     width: 90%;
