@@ -536,7 +536,7 @@ a {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: fixed;
-  z-index: 9999;
+  z-index: 2;
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateY(0.5rem);
@@ -606,9 +606,6 @@ a {
   .Header-Drop-menu {
     margin-top: 0.092vw;
     margin-left: -2vw;
-  }
-  .Header-Drop-menu li {
-    width: 19vw;
   }
   .Header-Drop-menu li svg {
     width: 2.6vw;
@@ -770,6 +767,8 @@ a {
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#124c00), to(#061900));
   background-image: linear-gradient(to bottom, #124c00, #061900);
+  position: absolute;
+  width: 100%;
   z-index: 3;
 }
 
@@ -1606,6 +1605,7 @@ a {
   -webkit-animation: shadow-pulse 3s infinite;
           animation: shadow-pulse 3s infinite;
   scroll-margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .home-my-foto {
@@ -1681,6 +1681,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
+    margin-top: 10vh;
   }
   .home-my-conten {
     width: 90%;

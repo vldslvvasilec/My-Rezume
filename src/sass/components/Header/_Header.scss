@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, #124c00, #061900);
+    position: absolute;
+    width: 100%;
     z-index: 3;
 }
 
@@ -64,6 +66,7 @@
 
     .Header-nav-list {
         li {
+
             a,
             section {
                 span {
@@ -86,6 +89,7 @@
 
     .Header-nav-list {
         li {
+
             a,
             section {
                 span {
