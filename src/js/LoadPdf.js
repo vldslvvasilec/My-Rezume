@@ -4,13 +4,13 @@ const PdfButtonsMass = document.querySelectorAll("li.PdfElem");
 const PdfButtonOk = document.querySelector(".LoadPdfButtonsOK");
 const PdfButtonCancel = document.querySelector(".LoadPdfButtonsCancel");
 let PdfUserLang;
-let PdfFileUrl = `/src/pdf/Rezume${PdfUserLang}.pdf`;
+let PdfFileUrl = `./pdf/Rezume${PdfUserLang}.pdf`;
 let PdfFileName = `Rezume${PdfUserLang}.pdf`;
 // Закрытие модалки PDF, открытие экрана
 const ClosePdfWindow = () => {
     PdfModall.classList.remove("PdfShowModal");
     PdfModall.classList.add("PdfCloseModal");
-    Body.classList.remove("translucentBg");
+    document.body.classList.remove("translucentBg");
 };
 PdfButtonsMass.forEach((PdfButton) => {
     // Открытие модалки PDF, затемнение экрана, добавление текста lang
@@ -18,7 +18,7 @@ PdfButtonsMass.forEach((PdfButton) => {
         const textOfButton = PdfButton.getAttribute("value");
         PdfNextText.innerText = textOfButton;
         PdfUserLang = textOfButton;
-        Body.classList.add("translucentBg");
+        document.body.classList.add("translucentBg");
         PdfModall.classList.remove("PdfCloseModal");
         PdfModall.classList.add("PdfShowModal");
     });
@@ -31,7 +31,7 @@ PdfButtonCancel.addEventListener("click", function () {
 PdfButtonOk.addEventListener("click", function () {
     // Добавление ссылки, скачивание файла от Lang, удаление ссылки после скачивания, закрытие окна
     let a = document.createElement("a");
-    a.href = `./src/assets/pdf/Rezume${PdfUserLang}.pdf`;
+    a.href = `./pdf/Rezume${PdfUserLang}.pdf`;
     a.download = `Rezume${PdfUserLang}.pdf`;
     document.body.appendChild(a);
     a.click();

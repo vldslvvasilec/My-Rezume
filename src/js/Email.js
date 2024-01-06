@@ -7,7 +7,7 @@ const UserName = document.querySelector(".name");
 const UserEmail = document.querySelector(".email");
 const UserText = document.querySelector(".message");
 const ButtonsSubmit = document.querySelector(".emailButtonsSubmit");
-const ButtonsCencel = document.querySelector(".emailButtonsCencel");
+const ButtonsCencel = document.querySelector(".emailButtonsCencelBut");
 
 // Очистка окна ввода при submit:
 const clinerWindow = () => {
@@ -17,7 +17,7 @@ const clinerWindow = () => {
 };
 // Закрытие окна по нажатию на submit:
 const closeWindow = () => {
-    Body.classList.remove("translucentBg");
+    document.body.classList.remove("translucentBg");
     SendEmail.classList.remove("SendEmailShow");
     SendEmail.classList.add("SendEmailClose");
 };
@@ -32,10 +32,10 @@ EmailForm.addEventListener("submit", function (event) {
 });
 
 // Очистка окна ввода при cancel:
-const resetAndCloseEmail = () => {
+ButtonsCencel.addEventListener("click", function () {
     clinerWindow();
     closeWindow();
-};
+});
 
 // Открытие окна ввода, закрытие экрана:
 buttonEmail.addEventListener("click", function () {

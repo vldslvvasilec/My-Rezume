@@ -35,10 +35,10 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .Main-hobbies {
         h3 {
-            font-size: calc(var(--index) * 1.8);
+            font-size: calc(var(--index) * 1.7);
         }
 
         p {
@@ -54,7 +54,7 @@
         }
 
         p {
-            font-size: calc(var(--index) * 1.1);
+            font-size: calc(var(--index) * 1.3);
         }
     }
 }

@@ -1,4 +1,5 @@
 .Header-Drop-menu {
+    position: absolute;
     background-color: var(--color-green-dark2x);
     margin-top: 0.01vw;
     padding: 1vw;
@@ -6,13 +7,13 @@
     border-bottom-right-radius: 10px;
     position: fixed;
     z-index: 2;
-
     visibility: hidden;
     opacity: 0;
     transform: translateY(0.5rem);
     transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
 
     li {
+        width: 100%;
         display: flex;
         align-items: center;
         margin-bottom: 2vw;
@@ -75,17 +76,19 @@
 
 @media screen and (max-width: 500px) {
     .Header-Drop-menu {
+
         margin-top: 0.092vw;
         margin-left: -2vw;
 
         li {
+
             svg {
                 width: 2.6vw;
                 height: 2.6vw;
             }
 
             span {
-                font-size: 2.8vw;
+                font-size: calc(var(--index)*2);
             }
         }
     }

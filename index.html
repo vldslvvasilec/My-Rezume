@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/css/index.min.css" />
-
+        <link rel="stylesheet" href="./src/css/index.min.css" />
         <title>Vladyslav Shaposhnyk</title>
     </head>
     <body>
@@ -42,10 +41,7 @@
                         <button class="emailButtonsSubmitBut" type="submit">
                             <span class="emailButtonsSubmit">Отправить</span>
                         </button>
-                        <button
-                            class="emailButtonsCencelBut"
-                            type="button"
-                            onclick="resetAndCloseEmail()">
+                        <button class="emailButtonsCencelBut" type="button">
                             <span class="SendEmailCancel">Отмена</span>
                         </button>
                     </section>
@@ -82,20 +78,18 @@
                         <section class="contactsElem contact_telegram">
                             <a href="https://t.me/Vladi2511" target="_blank"
                                 ><img
-                                    src="./src/assets/icons/telegram.svg"
+                                    src="/src/assets/icons/telegram.svg"
                                     alt=""
                             /></a>
                         </section>
                         <section class="contactsElem contact_whatsapp">
                             <a href="https://wa.me/420705923491" target="_blank"
-                                ><img
-                                    src="./src/assets/icons/whatsapp.svg"
-                                    alt=""
+                                ><img src="/src/assets/icons/whatsapp.svg"
                             /></a>
                         </section>
                         <section class="contactsElem contact_email">
                             <a href="#"
-                                ><img src="./src/assets/icons/email.svg" alt=""
+                                ><img src="/src/assets/icons/email.svg" alt=""
                             /></a>
                         </section>
                         <section class="contactsElem contact_linkedln">
@@ -103,7 +97,7 @@
                                 href="https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87-726242262/"
                                 target="_blank"
                                 ><img
-                                    src="./src/assets/icons/linkedin.svg"
+                                    src="/src/assets/icons/linkedin.svg"
                                     alt=""
                             /></a>
                         </section>
@@ -469,7 +463,7 @@
                 <div class="Main-Home" id="main-home-id">
                     <section class="_animItems home-my-foto">
                         <img
-                            src="./src/assets/images/My-Foto.jpg"
+                            src="/src/assets/images/My-Foto.jpg"
                             width="auto"
                             height="auto"
                             alt="My-Foto" />
@@ -874,9 +868,14 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script src="/My-Rezume/src/js/lang.js"></script>
-        <script src="/My-Rezume/src/js/Email.js"></script>
-        <script src="/My-Rezume/src/js/PortfolioList.js"></script>
-        <script src="/My-Rezume/distOne/OneFile/index-lz_NDj5o.js"></script>
+        <script type="module" src="./src/js/Search-lang.js"></script>
+        <script type="module" src="./src/js/Contakts-js.js"></script>
+        <script type="module" src="./src/js/Email.js"></script>
+        <script type="module" src="./src/js/Header.js"></script>
+        <script type="module" src="./src/js/LoadPdf.js"></script>
+        <script type="module" src="./src/js/Main.js"></script>
+        <script type="module" src="./src/js/PortfolioList.js"></script>
+        <script type="module" src="./src/js/SendEmail.js"></script>
+        <script type="module" src="./src/js/textAnim.js"></script>
     </body>
 </html>

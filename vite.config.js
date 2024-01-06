@@ -12,9 +12,35 @@
 // Это только небольшой перечень возможностей. Vite предоставляет широкие возможности для настройки сборки, оптимизации и разработки проекта через свою конфигурацию.
 
 // vite.config.js
+// export default {
+//     base: "./",
+//     build: {
+//         outDir: "distOne",
+//         assetsDir: "OneFile",
+//     },
+// };
+
 export default {
+    // Другие настройки Vite...
+    base: "./",
     build: {
+        // Определяем каталог для ресурсов
         outDir: "distOne",
-        assetsDir: "OneFile",
+        rollupOptions: {
+            output: {
+                assetFileNames: (assetInfo) => {
+                    // Список базовых имен файлов для сохранения без изменений
+                    const preserveNames = ["CZ", "EN", "RU", "UA"];
+                    // Получаем базовое имя файла без расширения
+                    const baseName = assetInfo.name.split(".")[0];
+
+                    if (preserveNames.includes(baseName)) {
+                        // Возвращаем оригинальное имя файла с расширением
+                        return `icons/${baseName}.png`;
+                    }
+                    return "assets/[name]-[hash][extname]"; // Формат для остальных файлов
+                },
+            },
+        },
     },
 };
