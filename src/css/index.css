@@ -1189,14 +1189,14 @@ a {
 .front-end h2,
 .back-end h2 {
   align-self: center;
-  font-size: calc(var(--index) * 2);
+  font-size: calc(var(--index) * 1.8);
   font-weight: 600;
-  margin-bottom: 2vh;
+  margin-bottom: 1.8vh;
 }
 
 .skill-wrap {
   display: flex;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
   align-items: center;
 }
 .skill-wrap:last-child {
